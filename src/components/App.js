@@ -44,7 +44,14 @@ class App extends Component {
     render() {
         return (
             <div className="playground">
-                {this.renderBallOrButton()}
+                {!this.state.renderBall && (
+          <button className="start" onClick={this.buttonClickHandler}>
+            Start
+          </button>
+        )}
+		 {this.state.renderBall && (
+          <div className="ball" style={this.state.ballPosition}></div>
+        )}
             </div>
         )
     }
