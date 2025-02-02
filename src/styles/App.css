@@ -3,8 +3,16 @@
     height:50%;
     margin: auto;
 }
-body html .root {
+
+html, body, #root {
     height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.start {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
 }
 .ball{
     background-color: black;
